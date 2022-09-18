@@ -128,7 +128,7 @@ main section:nth-child(3) {
 @keyframes fromBotton {
     From {
         opacity: 0;
-        transform: translateY(45px);
+        transform: translateY(60px);
     }
     To {
         opacity: 1;
@@ -139,7 +139,7 @@ main section:nth-child(3) {
 @keyframes fromRight {
     From {
         opacity: 0;
-        transform: translateX(45px);
+        transform: translateX(60px);
     }
     To {
         opacity: 1;
@@ -150,7 +150,7 @@ main section:nth-child(3) {
 @keyframes fromLeft {
     From {
         opacity: 0;
-        transform: translateX(-45px);
+        transform: translateX(-60px);
     }
     To {
         opacity: 1;
