@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NLW Esports</title>
     <link rel="stylesheet" href="./styles.css">
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <Header>
@@ -21,20 +26,34 @@
             <div>
                 <h2>Meus Jogos</h2>
                 <p>Os Jogos que mais gosto de jogar</p>
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Elite%3A%20Dangerous"> 
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/80607_IGDB-285x380.jpg" alt="Imagem do Jogo Elite Dangerous"></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/Space%20Engineers"> 
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/391475_IGDB-285x380.jpg" alt="Imagem do Jogo Space Engineers"></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.twitch.tv/directory/game/7%20Days%20to%20Die"> 
-                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/271304_IGDB-285x380.jpg" alt="Imagem do Jogo 7 Days to Die"></a>
-                    </li>
-                </ul>
+                <Div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Elite%3A%20Dangerous"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/80607_IGDB-285x380.jpg" alt="Imagem do Jogo Elite Dangerous"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Space%20Engineers"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/391475_IGDB-285x380.jpg" alt="Imagem do Jogo Space Engineers"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/7%20Days%20to%20Die"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/271304_IGDB-285x380.jpg" alt="Imagem do Jogo 7 Days to Die"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Minecraft"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg" alt="Imagem do Jogo Minecraft"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-285x380.jpg" alt="Imagem do Jogo Grand Theft Auto"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a target="_blank" href="https://www.twitch.tv/directory/game/Conan%20Exiles"> 
+                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/493551_IGDB-285x380.jpg" alt="Imagem do Jogo Connan Exiles"></a>
+                        </li>
+                    </ul>
+                </Div>
             </div>
         </section>
 
@@ -105,5 +124,15 @@
             </div>
         </section>
     </main>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+        slidesPerView : 3,
+        loop : true
+       });
+     </script>
 </body>
 </html>

@@ -157,3 +157,14 @@ main section:nth-child(3) {
         transform: translateX(0px);
     }
 }
+
+/* Swiper */
+
+section {
+    overflow: hidden;
+}
+
+section ul {
+    flex-wrap: nowrap;
+    gap: 0;   
+}
